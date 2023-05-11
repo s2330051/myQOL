@@ -17,7 +17,7 @@ response = requests.get(url, params=params)
 feed = feedparser.parse(response.text)
 
 # 論文をダウンロードする
-folder = 'C:/Users/PC_User/Desktop/paper'
+folder = 'C:/Users/~'
 for entry in feed.entries:
 
 

@@ -3,7 +3,7 @@ import requests
 
 # IEEE Xplore APIのエンドポイントとパラメータを設定する
 url = 'https://ieeexploreapi.ieee.org/api/v1/search/articles'
-api_key = 'y46pfqdx2r5p3re878yzjwrr'
+api_key = ''
 headers = {
     'X-API-Key': api_key,
     'Content-Type': 'application/json'
@@ -20,7 +20,7 @@ response = requests.post(url, headers=headers, json=params)
 data = response.json()['articles']
 
 # 論文をダウンロードする
-folder = 'C:/Users/PC_User/Desktop/paper'
+folder = 'C:/Users/~'
 for article in data:
     title = article['title']
     abstract = article['abstract']
